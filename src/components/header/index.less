@@ -3,18 +3,31 @@
 .content_header {
   width: 100%;
   height: 60px;
-  background: @red;
+  border-bottom: 1px solid #666666;
+  // background: @primary;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   &_left{
-    width: 240px;
-    height: 100%;
     color: #ffffff;
     // background: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+  }
+  &_right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .ant-switch{
+    background-color: #1890FF;
+  }
+  .ant-switch:focus{
+    box-shadow: 0 0 0 0;
+  }
+  .ant-switch-checked{
+    background-color: #DD001B;
   }
 }
